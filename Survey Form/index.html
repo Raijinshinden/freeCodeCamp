@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">My Survey</h1>
+
+    <p id="description">Thank you for taking the time to answer this survey.</p>
+    <form id="survey-form">
+    <fieldset>
+        <label id="name-label" for="name">Enter Your Name: <input id="name" name="name" type="text" placeholder="John Smith" required /></label>
+        <label id="email-label" for="email">Enter Your Email: <input id="email" name="email" type="email" placeholder="fakeName@email.com" required /></label>
+        <label id="number-label" for="number">Enter Your Age: <input id="number" name="number" type="number" min="8" max="16" placeholder="25" required /></label>
+    </fieldset>
+    <fieldset>
+        <legend>Employment Type (required)</legend>
+        <label for="full-time"><input id="full-time" type="radio" name="employment-type" class="inline" value="Full-time" checked /> Full-time</label>
+        <label for="part-time"><input id="part-time" type="radio" name="employment-type" class="inline" value="Part-time" /> Part-time</label>
+        <label for="student"><input id="student" type="radio" name="employment-type" class="inline" value="Student" /> Student</label>
+        <label for="unemployed"><input id="unemployed" type="radio" name="employment-type" class="inline" value="Unemployed" /> Unemployed</label>
+    </fieldset>
+    <fieldset>
+        <label id="selector">How did you hear about us?
+            <select id="dropdown">
+            <option value=" ">(Select one)</option>
+            <option value="1">SNS</option>
+            <option value="2">YouTube</option>
+            <option value="3">Larry's Ass</option>
+            <option value="4">Other</option>
+            </select>
+        </label>
+    </fieldset>
+        <label for="terms-and-conditions">
+        <input class="inline" id="terms-and-conditions" type="checkbox" name="terms-and-conditions" value="terms-and-conditions" required /> I accept the terms and condition.</a>
+        </label>
+        <input class="inline" id="newsletter" type="checkbox" name="newsletter" value="newsletter" required /> I would like to recieve the monthly email.</a>
+        </label>
+        <label></label><input class="inline" id="updates" type="checkbox" name="updates" value="update" required/> I would like to recieve updates.</label>
+    <fieldset>
+        <label for="comment">Please write any comments you have:
+        <textarea id="comment" name="comment" rows="3" cols="30" placeholder="I would like ..."></textarea>
+        </label>
+    </fieldset>
+        <input id="submit" type="submit" value="Submit" />
+        </form>
+    </body>
